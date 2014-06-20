@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+div.loginbox
+form(name="user", action="/signUp", method="post")
+div
+div
+span.label userName: input(type="text", name="name")<br />
+div
+span.label email: input(type="text", name="email")<br>
+div
+span.label password: input(type="password", name="password")<br>
+div
+input(type="submit", value="signup")

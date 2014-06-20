@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1.
+        User List
+    ul
+        each user, i in users
+            li(name="user")
+                "userName"- #{user.name}
+                "email" #{user.email}
